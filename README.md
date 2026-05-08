@@ -1,39 +1,34 @@
-# Thaghrah Public Project Website
+# Thaghrah Project Website
 
-This is the public informational website required by the domain instructions.
+This directory contains the public-facing website for **Thaghrah**, a University of Bahrain senior project focused on practical cybersecurity learning through packet analysis.
 
-## Files
+The website presents the project vision, problem statement, platform features, technical architecture, demo flow, team profiles, and reference resources in a clean multi-page experience aligned with the project branding.
 
-- `index.html` - project website page
-- `styles.css` - styling
+## Overview
 
-## Run locally
+- **Purpose:** Public presentation of the Thaghrah platform and its educational value.
+- **Audience:** Faculty evaluators, students, and external reviewers.
+- **Style:** Professional dark cybersecurity theme with modern interactive UI elements.
 
-Open `index.html` directly in your browser, or run a local static server:
+## Key Sections
 
-```bash
-cd project-website
-python3 -m http.server 8080
-```
+- `index.html` — Landing page and high-level project introduction
+- `about.html` — Problem context, impact, and learning outcomes
+- `features.html` — Core platform capabilities and gamification model
+- `architecture.html` — Technical design and AI pipeline overview
+- `demo.html` — Demo video, preview screens, and workflow
+- `team.html` — Team members and CV access
+- `resources.html` — Supporting references and materials
+- `contact.html` — Project contact channel
 
-Then open `http://127.0.0.1:8080`.
+## Frontend Stack
 
-## Publish with a custom domain
+- HTML5
+- CSS3 (custom styling and animations)
+- Vanilla JavaScript (`js/app.js`) for shared components and interactions
 
-Recommended simple flow:
+## Assets and Structure
 
-1. Upload this folder to a GitHub repository.
-2. Enable **GitHub Pages** for that repository.
-3. In GitHub Pages settings, set custom domain (example: `thaghrah.com`).
-4. In Namecheap DNS:
-   - Set `A` records for root (`@`) to GitHub Pages IPs.
-   - Set `CNAME` for `www` to `<username>.github.io`.
-5. Enable HTTPS in GitHub Pages.
-6. Set up professional email in Namecheap (e.g., `info@thaghrah.com`).
-
-This gives you all 4 required components:
-
-- Domain
-- Hosting
-- Professional email
-- Website
+- `assets/` — Visual assets (icons, diagrams, logo, documents)
+- `styles.css` — Global theme, layout, responsive behavior, and motion
+- `js/app.js` — Shared navbar/footer rendering, transitions, and UI effects
