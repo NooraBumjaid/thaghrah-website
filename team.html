@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thaghrah | Team</title>
+    <meta name="description" content="Thaghrah team members, roles, supervisor, university info, and project timeline." />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./js/app.js"></script>
+  </head>
+  <body data-page="team">
+    <div id="site-nav"></div>
+    <header class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Team</p>
+        <h2>People Behind Thaghrah</h2>
+        <p class="hero-subtitle">Two student developers and one supervisor delivering the project vision.</p>
+      </div>
+    </header>
+    <main>
+      <section class="container section">
+        <h3 class="section-heading">Development Team</h3>
+        <p class="section-subtitle">Cybersecurity Graduates - Batch 2026</p>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar">NA</div>
+            <h4>Noora Abdulrahman Bumjaid</h4>
+            <p>Student Developer</p>
+            <p>Student ID: 202203245</p>
+            <div class="team-links">
+              <button type="button" class="team-link-btn cv-trigger" data-cv-url="./assets/Noora_Resume.pdf" data-cv-filename="Noora_Resume.pdf" data-cv-label="Noora Abdulrahman Bumjaid">CV</button>
+              <a href="https://www.linkedin.com/in/noorabumjaid" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="mailto:noorabumjaid04@gmail.com">Email</a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="avatar">MH</div>
+            <h4>Manar Hussain Abdulrahim</h4>
+            <p>Student Developer</p>
+            <p>Student ID: 202201554</p>
+            <div class="team-links">
+              <button type="button" class="team-link-btn cv-trigger" data-cv-url="./assets/Manar%20Abdulrahim%20CV.pdf" data-cv-filename="Manar Abdulrahim CV.pdf" data-cv-label="Manar Hussain Abdulrahim">CV</button>
+              <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="mailto:manarrh005@gmail.com">Email</a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="avatar">AA</div>
+            <h4>Dr. Abdulla Khalifa Aldoseri</h4>
+            <p>Project Supervisor</p>
+            <p>College of Information Technology</p>
+            <div class="team-links">
+              <a href="https://www.linkedin.com/in/dr-abdullah-aldoseri-0ab6706a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="mailto:akaldoseri@uob.edu.bh">Email</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="supervisor-appreciation content-panel" role="region" aria-labelledby="supervisorThanksHeading">
+          <h3 id="supervisorThanksHeading" class="supervisor-appreciation-title">With gratitude</h3>
+          <p>
+            We are deeply grateful to <strong>Dr. Abdulla Khalifa Aldoseri</strong> for guiding Thaghrah from early ideas through design, development, and final delivery. His expertise, patience, and steady feedback helped us grow as developers and present work we are proud of. Thank you for your time, encouragement, and commitment to our success.
+          </p>
+        </div>
+      </section>
+
+      <section class="container section">
+        <h3 class="section-heading">University Information</h3>
+        <div class="info-banner">
+          University of Bahrain • College of Information Technology • Senior Project (2025/2026)
+        </div>
+      </section>
+
+      <section class="container section">
+        <h3 class="section-heading">Project Timeline</h3>
+        <div class="workflow">
+          <article class="flow-step"><span>Q1</span><h4>Planning</h4><p>Requirements and scope definition.</p></article>
+          <article class="flow-step"><span>Q2</span><h4>Design</h4><p>Challenge model and UX design.</p></article>
+          <article class="flow-step"><span>Q3</span><h4>Development</h4><p>Core system and AI Lab features.</p></article>
+          <article class="flow-step"><span>Q4</span><h4>Validation</h4><p>Testing, polishing, and demo prep.</p></article>
+          <article class="flow-step"><span>Q5</span><h4>Documentation</h4><p>Report, poster, and presentation assets.</p></article>
+          <article class="flow-step"><span>Q6</span><h4>Expo</h4><p>Final project showcase delivery.</p></article>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <button id="scrollTopBtn" class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+
+    <div class="cv-modal" id="cvModal" aria-hidden="true" role="dialog" aria-labelledby="cvModalTitle">
+      <div class="cv-modal-backdrop" data-cv-close></div>
+      <div class="cv-modal-panel">
+        <div class="cv-modal-header">
+          <h2 id="cvModalTitle" class="cv-modal-title">CV preview</h2>
+          <div class="cv-modal-actions">
+            <a class="btn primary cv-modal-download" id="cvModalDownload" href="#" download>Download PDF</a>
+            <button type="button" class="cv-modal-close" aria-label="Close CV preview" data-cv-close>×</button>
+          </div>
+        </div>
+        <div class="cv-modal-body">
+          <iframe id="cvModalFrame" class="cv-modal-frame" title="CV PDF preview"></iframe>
+          <p class="cv-modal-hint">
+            Preview uses your browser’s PDF viewer. If it does not appear, use <strong>Download PDF</strong> or open the file in a new tab.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

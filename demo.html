@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thaghrah | Demo</title>
+    <meta name="description" content="Demo walkthrough, platform previews, and workflow explanation for Thaghrah." />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./js/app.js"></script>
+  </head>
+  <body data-page="demo">
+    <div id="site-nav"></div>
+    <header class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Demo</p>
+        <h2>See Thaghrah in Action</h2>
+        <p class="hero-subtitle">From registration to PCAP analysis and gamified achievement tracking.</p>
+      </div>
+    </header>
+    <main>
+      <section class="container section">
+        <h3 class="section-heading">Demo Video</h3>
+        <div class="demo-video-panel">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/"
+              title="Thaghrah Demo Video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <h3 class="section-heading">Platform Preview</h3>
+        <div class="preview-carousel">
+          <div class="preview-track">
+            <article class="preview-slide active"><h4>Dashboard Preview</h4><div class="mockup-screen mock-dashboard"></div><p>Progress, badges, and challenge navigation.</p></article>
+            <article class="preview-slide"><h4>Challenge Preview</h4><div class="mockup-screen mock-challenge"></div><p>PCAP download, hint, and flag submission workflow.</p></article>
+            <article class="preview-slide"><h4>AI Lab Preview</h4><div class="mockup-screen mock-ai"></div><p>Prompt-based generation of new packet scenarios.</p></article>
+            <article class="preview-slide"><h4>Progress Preview</h4><div class="mockup-screen mock-progress"></div><p>Points, completion milestones, and badge rewards.</p></article>
+          </div>
+          <div class="preview-controls">
+            <button class="preview-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="preview-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="preview-dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="preview-dot" data-slide="3" aria-label="Slide 4"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <h3 class="section-heading">How It Works</h3>
+        <div class="workflow">
+          <article class="flow-step"><span>1</span><h4>Register</h4><p>Create account.</p></article>
+          <article class="flow-step"><span>2</span><h4>Choose</h4><p>Open unlocked challenge.</p></article>
+          <article class="flow-step"><span>3</span><h4>Download</h4><p>Get challenge PCAP.</p></article>
+          <article class="flow-step"><span>4</span><h4>Analyze</h4><p>Use Wireshark tools.</p></article>
+          <article class="flow-step"><span>5</span><h4>Submit</h4><p>Validate with flag.</p></article>
+          <article class="flow-step"><span>6</span><h4>Earn</h4><p>Receive points/badges.</p></article>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <button id="scrollTopBtn" class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  </body>
+</html>

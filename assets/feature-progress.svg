@@ -1,0 +1,14 @@
+<svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="420" rx="20" fill="#172243"/>
+  <rect x="46" y="44" width="628" height="332" rx="14" fill="#0E1427" stroke="#2A3A67"/>
+  <circle cx="180" cy="170" r="72" fill="#151D35" stroke="#2A3A67"/>
+  <circle cx="180" cy="170" r="54" fill="none" stroke="#4DD4FF" stroke-width="12"/>
+  <rect x="280" y="110" width="330" height="18" rx="9" fill="#4DD4FF"/>
+  <rect x="280" y="142" width="280" height="12" rx="6" fill="#7081AE"/>
+  <rect x="280" y="168" width="320" height="12" rx="6" fill="#7081AE"/>
+  <rect x="280" y="194" width="220" height="12" rx="6" fill="#7081AE"/>
+  <rect x="94" y="274" width="220" height="64" rx="10" fill="#1B2748" stroke="#2A3A67"/>
+  <rect x="350" y="274" width="220" height="64" rx="10" fill="#1B2748" stroke="#2A3A67"/>
+  <path d="M140 305L165 327L210 285" stroke="#4DD4FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M398 305L423 327L468 285" stroke="#4DD4FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

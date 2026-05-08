@@ -1,0 +1,19 @@
+<svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="420" rx="20" fill="#172243"/>
+  <rect x="40" y="40" width="640" height="340" rx="14" fill="#0E1427" stroke="#2A3A67"/>
+  <rect x="74" y="82" width="250" height="256" rx="10" fill="#151D35" stroke="#2A3A67"/>
+  <rect x="102" y="116" width="190" height="14" rx="7" fill="#4DD4FF"/>
+  <rect x="102" y="146" width="160" height="10" rx="5" fill="#6D7DA8"/>
+  <rect x="102" y="168" width="175" height="10" rx="5" fill="#6D7DA8"/>
+  <rect x="102" y="190" width="140" height="10" rx="5" fill="#6D7DA8"/>
+  <rect x="368" y="82" width="278" height="124" rx="10" fill="#151D35" stroke="#2A3A67"/>
+  <rect x="392" y="112" width="160" height="12" rx="6" fill="#4DD4FF"/>
+  <rect x="392" y="138" width="220" height="10" rx="5" fill="#6D7DA8"/>
+  <rect x="392" y="160" width="200" height="10" rx="5" fill="#6D7DA8"/>
+  <rect x="368" y="224" width="278" height="114" rx="10" fill="#1B2748" stroke="#2A3A67"/>
+  <path d="M412 282C412 257 432 237 457 237C482 237 502 257 502 282C502 307 482 327 457 327C432 327 412 307 412 282Z" fill="#4DD4FF"/>
+  <circle cx="457" cy="282" r="22" fill="#0E1427"/>
+  <rect x="528" y="257" width="90" height="12" rx="6" fill="#8A96BC"/>
+  <rect x="528" y="281" width="76" height="10" rx="5" fill="#6D7DA8"/>
+  <rect x="528" y="301" width="84" height="10" rx="5" fill="#6D7DA8"/>
+</svg>
