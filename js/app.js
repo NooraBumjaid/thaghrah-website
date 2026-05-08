@@ -10,16 +10,12 @@
     ["demo", "Demo", "./demo.html"],
     ["team", "Team", "./team.html"],
     ["resources", "Resources", "./resources.html"],
-    ["contact", "Contact", "./contact.html"],
   ];
 
   if (navMount) {
     var links = navItems
       .map(function (item) {
         var cls = item[0] === page ? ' class="active"' : "";
-        if (item[0] === "contact") {
-          cls = cls ? ' class="active nav-contact"' : ' class="nav-contact"';
-        }
         return '<a href="' + item[2] + '"' + cls + ">" + item[1] + "</a>";
       })
       .join("");
