@@ -39,17 +39,41 @@
     });
   }
 
-  var linksForTransition = document.querySelectorAll('a[href$=".html"]');
-  linksForTransition.forEach(function (link) {
+  function isInternalHtmlNavigation(href) {
+    if (!href || href === "#") return false;
+    if (href.charAt(0) === "#") return false;
+    if (/^https?:\/\//i.test(href)) return false;
+    if (/^mailto:/i.test(href) || /^tel:/i.test(href)) return false;
+    return /\.html([?#]|$)/i.test(href);
+  }
+  document.querySelectorAll("a[href]").forEach(function (link) {
     link.addEventListener("click", function (e) {
       var href = link.getAttribute("href");
-      if (!href || href.indexOf("http") === 0) return;
+      if (!isInternalHtmlNavigation(href)) return;
       e.preventDefault();
       document.body.classList.add("page-leaving");
       setTimeout(function () {
         window.location.href = href;
       }, 230);
     });
+  });
+
+  /* Explicit new-tab open for external repo links (works when plain target=_blank fails). */
+  document.querySelectorAll("a.open-external-tab[href]").forEach(function (link) {
+    link.addEventListener(
+      "click",
+      function (e) {
+        var url = link.getAttribute("href");
+        if (!url || !/^https?:\/\//i.test(url)) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        var tab = window.open(url, "_blank", "noopener,noreferrer");
+        if (!tab) {
+          window.location.assign(url);
+        }
+      },
+      true
+    );
   });
 
   requestAnimationFrame(function () {

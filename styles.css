@@ -360,6 +360,15 @@ body[data-page="about"] .info-banner {
 .solution-card h4, .info-card h4, .team-card h4, .resource-card h4, .security-card h4, .gamification-card h4, .category-card h4 { font-size: 1.35rem; }
 .solution-card p, .info-card p, .team-card p, .resource-card p, .security-card p, .gamification-card p, .category-card p { margin: 0; color: var(--muted); font-size: 1.08rem; }
 .resource-card p { min-height: 58px; margin-bottom: 0.7rem; }
+.resource-card > a.btn {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.resource-card {
+  isolation: isolate;
+}
 .problem-grid .problem-card {
   min-height: 255px;
   display: flex;
