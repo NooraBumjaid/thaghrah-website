@@ -19,7 +19,6 @@ The website presents the project vision, problem statement, platform features, t
 - `demo.html` — Demo video, preview screens, and workflow
 - `team.html` — Team members and CV access
 - `resources.html` — Supporting references and materials
-- `contact.html` — Project contact channel
 
 ## Frontend Stack
 

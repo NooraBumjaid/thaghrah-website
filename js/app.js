@@ -27,7 +27,7 @@
 
   if (footerMount) {
     footerMount.innerHTML =
-      '<footer class="site-footer"><div class="container footer-grid"><div><div class="footer-brand"><img class="footer-logo" src="./assets/logo-nav.png" alt="Thaghrah logo" /><h4>Thaghrah</h4></div><p>University of Bahrain Senior Project 2025/2026</p></div><div><h4>Quick Links</h4><a href="./index.html">Home</a><a href="./features.html">Features</a><a href="./architecture.html">Architecture</a></div><div><h4>Team</h4><p>Cybersecurity Graduates - Batch 2026</p><a href="#">GitHub Project</a></div><div><h4>Contact</h4><a href="mailto:info@thaghrah.site">info@thaghrah.site</a></div></div><div class="container footer-bottom">© 2026 Thaghrah Senior Project Team. All rights reserved.</div></footer>';
+      '<footer class="site-footer"><div class="container footer-grid"><div><div class="footer-brand"><img class="footer-logo" src="./assets/logo-nav.png" alt="Thaghrah logo" /><h4>Thaghrah</h4></div><p>University of Bahrain Senior Project 2025/2026</p></div><div><h4>Quick Links</h4><a href="./index.html">Home</a><a href="./features.html">Features</a><a href="./architecture.html">Architecture</a></div><div><h4>Team</h4><p>Cybersecurity Graduates - Batch 2026</p></div><div><h4>Contact</h4><a href="mailto:info@thaghrah.site">info@thaghrah.site</a></div></div><div class="container footer-bottom">© 2026 Thaghrah Senior Project Team. All rights reserved.</div></footer>';
   }
 
   var menuToggle = document.querySelector(".menu-toggle");
