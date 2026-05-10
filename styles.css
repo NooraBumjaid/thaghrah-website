@@ -235,6 +235,31 @@ a { color: var(--accent); }
 .section-heading.left { text-align: left; }
 .section-subtitle { text-align: center; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.2rem; }
 
+.abstract-ar {
+  direction: rtl;
+  text-align: center;
+  line-height: 1.95;
+  font-family: system-ui, "Segoe UI", Tahoma, "Arial Unicode MS", Arial, sans-serif;
+  font-size: clamp(1.12rem, 2.1vw, 1.38rem);
+}
+.abstract-ar p {
+  margin: 0 auto 1.15rem;
+  max-width: 52rem;
+  color: var(--text);
+}
+.abstract-ar p:last-child {
+  margin-bottom: 0;
+}
+
+.back-to-resources {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+.back-to-resources .btn::after {
+  content: none;
+}
+
 .glass {
   background: linear-gradient(180deg, rgba(138, 203, 208, 0.08) 0%, rgba(16, 42, 82, 0.94) 100%);
   border: 1px solid var(--card-border);
@@ -299,7 +324,33 @@ a { color: var(--accent); }
 .video-frame iframe { width: 100%; height: 100%; border: 0; }
 
 .content-panel, .info-banner { padding: 1.2rem; max-width: 940px; margin: 0 auto; color: var(--muted); }
+.abstract-banner {
+  text-align: center;
+}
 .solution-grid, .info-grid, .team-grid, .resources-grid, .security-grid, .gamification-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.info-grid.objectives-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info-grid.conclusion-split-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About page — centered copy inside cards and overview banner */
+body[data-page="about"] .info-card {
+  text-align: center;
+}
+body[data-page="about"] .problem-grid .problem-card {
+  align-items: center;
+}
+body[data-page="about"] .info-banner {
+  text-align: center;
+}
 .solution-card, .info-card, .team-card, .resource-card, .security-card, .gamification-card, .category-card { padding: 1.05rem; }
 .solution-card:hover, .info-card:hover, .team-card:hover, .resource-card:hover, .security-card:hover, .gamification-card:hover, .category-card:hover, .flow-step:hover, .mini-stat:hover, .tech-chip:hover {
   transform: translateY(-7px) scale(1.01);
@@ -420,7 +471,39 @@ a { color: var(--accent); }
 .architecture-diagram-wrap { padding: 1rem; cursor: zoom-in; transition: box-shadow 0.2s ease; }
 .architecture-diagram-wrap:hover { box-shadow: 0 0 0 1px var(--accent), 0 18px 30px rgba(2,26,84,0.45); }
 .architecture-diagram { display: block; width: 100%; height: auto; border-radius: 12px; }
-.architecture-diagram-wrap figcaption { color: var(--muted); margin-top: 0.45rem; font-size: 0.9rem; text-align: center; }
+.architecture-diagram-wrap figcaption.diagram-zoom-caption {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 1rem auto 0;
+  padding: 0.55rem 1.2rem;
+  width: fit-content;
+  max-width: min(100%, 420px);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent-soft);
+  background: linear-gradient(180deg, rgba(138, 203, 208, 0.16) 0%, rgba(16, 42, 82, 0.55) 100%);
+  border: 1px solid rgba(138, 203, 208, 0.42);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 1px 0 rgba(214, 241, 244, 0.14),
+    0 8px 22px rgba(2, 26, 84, 0.42);
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, color 0.22s ease, transform 0.22s ease;
+}
+.architecture-diagram-wrap:hover figcaption.diagram-zoom-caption {
+  border-color: rgba(138, 203, 208, 0.75);
+  color: var(--text);
+  box-shadow:
+    inset 0 1px 0 rgba(214, 241, 244, 0.22),
+    0 10px 28px rgba(138, 203, 208, 0.18);
+  transform: translateY(-1px);
+}
+.architecture-diagram-wrap figcaption .diagram-zoom-icon {
+  flex-shrink: 0;
+  opacity: 0.95;
+}
 
 .progress-bar { height: 10px; border-radius: 999px; background: rgba(138, 203, 208, 0.18); overflow: hidden; margin: 0.35rem 0 0.7rem; }
 .progress-bar span {
