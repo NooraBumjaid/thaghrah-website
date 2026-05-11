@@ -20,7 +20,20 @@
       })
       .join("");
     navMount.innerHTML =
-      '<div class="site-nav-wrap"><nav class="container nav"><a class="brand" href="./index.html" aria-label="Thaghrah home"><img class="brand-logo" src="./assets/logo-nav.png" alt="Thaghrah logo" /><h1>Thaghrah</h1></a><button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button><div class="nav-links">' +
+      '<div class="site-nav-wrap"><nav class="container nav">' +
+      '<div class="nav-brand-group">' +
+      '<a class="university-nav-block" href="https://www.uob.edu.bh" target="_blank" rel="noopener noreferrer" aria-label="University of Bahrain, College of Information Technology, Department of Information Systems">' +
+      '<span class="university-nav-text">' +
+      '<span class="university-nav-title">University of Bahrain</span>' +
+      '<span class="university-nav-line">College of Information Technology</span>' +
+      '<span class="university-nav-line">Department of Information Systems</span>' +
+      "</span>" +
+      '<span class="university-nav-logo-wrap"><img class="university-nav-logo" src="./assets/download-removebg-preview.png" alt="" width="80" height="96" /></span>' +
+      "</a>" +
+      '<span class="nav-brand-divider" aria-hidden="true"></span>' +
+      '<a class="brand" href="./index.html" aria-label="Thaghrah home"><img class="brand-logo" src="./assets/logo-nav.png" alt="Thaghrah logo" /><h1>Thaghrah</h1></a>' +
+      "</div>" +
+      '<button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button><div class="nav-links">' +
       links +
       "</div></nav></div>";
   }

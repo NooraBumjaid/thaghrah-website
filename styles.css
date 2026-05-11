@@ -79,12 +79,79 @@ a { color: var(--accent); }
 }
 
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 0; }
+.nav-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  min-width: 0;
+}
+.university-nav-block {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.65rem, 1.5vw, 1.15rem);
+  flex-shrink: 0;
+  min-width: 0;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  opacity: 0.97;
+  transition: opacity 0.2s ease;
+}
+.university-nav-block:hover {
+  opacity: 1;
+}
+.university-nav-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.08rem;
+  text-align: left;
+  line-height: 1.22;
+  max-width: min(42vw, 22rem);
+}
+.university-nav-title {
+  font-size: clamp(0.78rem, 1.05vw, 1.05rem);
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.university-nav-line {
+  font-size: clamp(0.68rem, 0.92vw, 0.92rem);
+  font-weight: 500;
+  color: rgba(245, 248, 251, 0.88);
+}
+.university-nav-logo-wrap {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  flex-shrink: 0;
+  filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.4));
+}
+.university-nav-logo {
+  height: clamp(64px, 7.5vw, 82px);
+  width: auto;
+  max-height: 82px;
+  object-fit: contain;
+  display: block;
+}
+.nav-brand-divider {
+  width: 1px;
+  align-self: stretch;
+  min-height: 64px;
+  background: linear-gradient(180deg, transparent, rgba(138, 203, 208, 0.45), transparent);
+  flex-shrink: 0;
+}
 .nav h1 { margin: 0; color: var(--accent-soft); font-size: 1.45rem; }
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 0.62rem;
   text-decoration: none;
+  min-width: 0;
 }
 .brand-logo {
   width: 58px;
@@ -948,6 +1015,15 @@ body[data-page="about"] .info-banner {
     transition: max-height 0.28s ease, opacity 0.22s ease;
   }
   .brand-logo { width: 46px; height: 46px; }
+  .university-nav-logo {
+    height: 52px;
+    max-height: 54px;
+  }
+  .university-nav-text {
+    max-width: min(58vw, 16rem);
+  }
+  .nav-brand-divider { min-height: 48px; }
+  .nav-brand-group { gap: 0.5rem; flex-wrap: wrap; row-gap: 0.4rem; }
   .nav h1 { font-size: 1.25rem; }
   .nav-links.open {
     max-height: min(78vh, 620px);
