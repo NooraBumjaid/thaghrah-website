@@ -163,15 +163,26 @@
   }
   setupCardMouseGlow();
 
+  function youtubeEmbedUrl(id) {
+    return "https://www.youtube.com/embed/" + id + "?rel=0";
+  }
+
   function setupDemoVideos() {
     document.querySelectorAll(".demo-video-embed").forEach(function (frame) {
       var id = (frame.getAttribute("data-youtube-id") || "").trim();
       var wrap = frame.closest(".video-frame");
+      frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
       if (id) {
-        frame.src = "https://www.youtube.com/embed/" + encodeURIComponent(id);
+        frame.src = youtubeEmbedUrl(id);
         if (wrap) wrap.classList.remove("is-empty");
       } else if (wrap) {
         wrap.classList.add("is-empty");
+      }
+    });
+
+    document.querySelectorAll(".video-frame iframe[src*='youtube.com/embed']").forEach(function (frame) {
+      if (!frame.classList.contains("demo-video-embed")) {
+        frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
       }
     });
 
