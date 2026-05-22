@@ -163,6 +163,40 @@
   }
   setupCardMouseGlow();
 
+  function setupDemoVideos() {
+    document.querySelectorAll(".demo-video-embed").forEach(function (frame) {
+      var id = (frame.getAttribute("data-youtube-id") || "").trim();
+      var wrap = frame.closest(".video-frame");
+      if (id) {
+        frame.src = "https://www.youtube.com/embed/" + encodeURIComponent(id);
+        if (wrap) wrap.classList.remove("is-empty");
+      } else if (wrap) {
+        wrap.classList.add("is-empty");
+      }
+    });
+
+    var tabs = document.querySelectorAll(".demo-tab");
+    var panels = document.querySelectorAll(".demo-tab-panel");
+    if (!tabs.length || !panels.length) return;
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var key = tab.getAttribute("data-tab");
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle("active", on);
+          t.setAttribute("aria-selected", on ? "true" : "false");
+        });
+        panels.forEach(function (panel) {
+          var on = panel.getAttribute("data-panel") === key;
+          panel.classList.toggle("active", on);
+          panel.hidden = !on;
+        });
+      });
+    });
+  }
+  setupDemoVideos();
+
   var diagramWrap = document.querySelector(".architecture-diagram-wrap");
   var lightbox = document.getElementById("diagramLightbox");
   var closeBtn = document.querySelector(".lightbox-close");

@@ -14,27 +14,75 @@
       <div class="container hero-content">
         <p class="eyebrow">Demo</p>
         <h2>See Thaghrah in Action</h2>
-        <p class="hero-subtitle">From registration to PCAP analysis and gamified achievement tracking.</p>
+        <p class="hero-subtitle">System walkthrough, platform screenshots, and 3-minute pitch videos in Arabic and English.</p>
       </div>
     </header>
     <main>
-      <section class="container section">
-        <h3 class="section-heading">Demo Video</h3>
-        <div class="demo-video-panel">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/"
-              title="Thaghrah Demo Video"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+      <section class="container section" id="demo-videos">
+        <h3 class="section-heading">Project Videos</h3>
+
+        <div class="demo-videos-wrap">
+          <div class="demo-tabs" role="tablist" aria-label="Demo videos">
+            <button type="button" class="demo-tab active" role="tab" id="demo-tab-system" aria-selected="true" aria-controls="demo-panel-system" data-tab="system">System Demo</button>
+            <button type="button" class="demo-tab" role="tab" id="demo-tab-arabic" aria-selected="false" aria-controls="demo-panel-arabic" data-tab="arabic">3-Min Pitch (Arabic)</button>
+            <button type="button" class="demo-tab" role="tab" id="demo-tab-english" aria-selected="false" aria-controls="demo-panel-english" data-tab="english">3-Min Pitch (English)</button>
+          </div>
+
+          <div class="demo-tab-panels">
+            <article class="demo-tab-panel demo-video-panel active" id="demo-panel-system" role="tabpanel" aria-labelledby="demo-tab-system" data-panel="system">
+              <h4>System Demo</h4>
+              <p>Full walkthrough of the Thaghrah platform: registration, challenges, PCAP workflow, AI lab, and progress tracking.</p>
+              <div class="video-frame">
+                <iframe
+                  class="demo-video-embed"
+                  data-youtube-id=""
+                  src=""
+                  title="Thaghrah system demo"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+
+            <article class="demo-tab-panel demo-video-panel" id="demo-panel-arabic" role="tabpanel" aria-labelledby="demo-tab-arabic" data-panel="arabic" lang="ar" dir="rtl" hidden>
+              <h4>عرض المشروع — ٣ دقائق</h4>
+              <p>ملخص قصير بالعربية يوضح فكرة المشروع، الأهداف، والقيمة التعليمية لمنصة ثغرة.</p>
+              <div class="video-frame">
+                <iframe
+                  class="demo-video-embed"
+                  data-youtube-id=""
+                  src=""
+                  title="Thaghrah 3-minute pitch in Arabic"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+
+            <article class="demo-tab-panel demo-video-panel" id="demo-panel-english" role="tabpanel" aria-labelledby="demo-tab-english" data-panel="english" hidden>
+              <h4>3-Minute Pitch (English)</h4>
+              <p>Short English presentation covering the problem, solution, key features, and impact of Thaghrah.</p>
+              <div class="video-frame">
+                <iframe
+                  class="demo-video-embed"
+                  data-youtube-id=""
+                  src=""
+                  title="Thaghrah 3-minute pitch in English"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="container section">
         <h3 class="section-heading">Platform Preview</h3>
+        <p class="section-subtitle">Screenshots from the system demo — explore the main user journey step by step.</p>
         <div class="preview-carousel">
           <div class="preview-track">
             <article class="preview-slide active"><h4>Landing Page</h4><div class="mockup-screen mock-screen-photo" role="img" aria-label="Thaghrah landing page"><img src="./assets/homepage.png" alt="Thaghrah landing page: launch platform, sign in, and Wireshark download recommendation." loading="lazy" /></div><p>Landing page with platform launch, sign-in, and lab setup guidance.</p></article>
