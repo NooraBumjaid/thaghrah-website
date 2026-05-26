@@ -214,7 +214,12 @@ a { color: var(--accent); }
 .btn.outline { background: transparent; color: var(--accent); border-color: var(--accent); box-shadow: none; }
 .btn.primary { background: linear-gradient(90deg, var(--accent-strong) 0%, var(--accent) 100%); }
 .btn.block { display: block; width: 100%; text-align: center; margin-top: 0.5rem; }
-.btn.block::after { content: "↗"; }
+.btn.block::after { content: "→"; }
+.resource-card .btn.block[href^="http"]::after,
+.resource-card .btn.block[href$=".pdf"]::after,
+.resource-card .btn.open-external-tab::after {
+  content: "↗";
+}
 
 .hero::before,
 .hero::after {
